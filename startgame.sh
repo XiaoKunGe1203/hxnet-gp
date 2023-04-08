@@ -43,13 +43,7 @@ else
         sleep 3s
             ./bedrock_server
         else
-           echo  
-
-    fi
-
-fi
-
-if [ "$JAR" = "" ]
+           if [ "$JAR" = "" ]
 then
 clear
 echo '______  _____  ______   __________________'
@@ -94,3 +88,8 @@ esac
 
     JAR="server.jar"
 fi
+    fi
+
+fi
+
+
