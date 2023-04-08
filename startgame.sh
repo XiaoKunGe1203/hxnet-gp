@@ -20,6 +20,7 @@ then
         echo '====================='
         sleep 3s
             wget -O /sjava.sh https://raw.gitmirror.com/XiaoKunGe1203/hxnet-gp/main/startmcjava.sh && sh /sjava.sh
+            exit
 else
     if [ -e "bedrock_server" ]
         then
@@ -42,8 +43,15 @@ else
         echo '====================='
         sleep 3s
             ./bedrock_server
+            exit
         else
-           if [ "$JAR" = "" ]
+           echo  
+
+    fi
+
+fi
+
+if [ "$JAR" = "" ]
 then
 clear
 echo '______  _____  ______   __________________'
@@ -88,8 +96,3 @@ esac
 
     JAR="server.jar"
 fi
-    fi
-
-fi
-
-
