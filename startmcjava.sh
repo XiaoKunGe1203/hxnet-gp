@@ -1,4 +1,3 @@
-jdk_version(){
 echo '====================='
 echo '选择Java版本'
 echo '====================='
@@ -27,4 +26,3 @@ case $JAVA_SOFTWARE in
   echo '你来的太早了'
 ;;
 esac
-}
