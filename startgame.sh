@@ -1,3 +1,4 @@
+cd /home/container/
 clear
 if [ -e "server.jar" ]
 then
@@ -16,10 +17,10 @@ then
         echo '帮助页面https://helper.gp.nkvps.com/'
         echo '====================================='
         echo '====================='
-        echo '启动Minecraft Java服务器'
+        echo '启动Minecraft 服务器'
         echo '====================='
         sleep 3s
-            curl -s -o /sjava.sh https://raw.gitmirror.com/XiaoKunGe1203/hxnet-gp/main/startmcjava.sh && sh /sjava.sh
+            curl -s -o /tmp/sjava.sh https://raw.gitmirror.com/XiaoKunGe1203/hxnet-gp/main/startmcjava.sh && sh /tmp/sjava.sh
             exit
 else
     if [ -e "bedrock_server" ]
@@ -81,7 +82,7 @@ case $SOFTWARE_SELECT in
      echo -e "安装Minecraft Java服务器"
      echo -e "==================================="
      sleep 5s
-     sh /installjava.sh
+     sh /tmp/installjava.sh
      exit
       ;;
    "2")
