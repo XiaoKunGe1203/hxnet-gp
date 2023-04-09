@@ -11,16 +11,16 @@ read -p "输入: " JAVA_SOFTWARE </dev/tty
 
 case $JAVA_SOFTWARE in
 1)
-/jdk8/bin/java -Xms128M -Dfile.encoding=UTF-8 -Dlog4j2.formatMsgNoLookups=true -XX:+UseG1GC -jar server.jar nogui
+/home/jdk8/bin/java -Xms128M -Dfile.encoding=UTF-8 -Dlog4j2.formatMsgNoLookups=true -XX:+UseG1GC -jar server.jar nogui
 ;;
 2)
-/jdk11/bin/java -Xms128M -Dfile.encoding=UTF-8 -Dlog4j2.formatMsgNoLookups=true -XX:+UseG1GC -jar server.jar nogui
+/home/jdk11/bin/java -Xms128M -Dfile.encoding=UTF-8 -Dlog4j2.formatMsgNoLookups=true -XX:+UseG1GC -jar server.jar nogui
 ;;
 3)
-/jdk16/bin/java -Xms128M -Dfile.encoding=UTF-8 -Dlog4j2.formatMsgNoLookups=true -XX:+UseG1GC -jar server.jar nogui
+/home/jdk16/bin/java -Xms128M -Dfile.encoding=UTF-8 -Dlog4j2.formatMsgNoLookups=true -XX:+UseG1GC -jar server.jar nogui
 ;;
 4)
-/jdk17/bin/java -Xms128M -Dfile.encoding=UTF-8 -Dlog4j2.formatMsgNoLookups=true -XX:+UseG1GC -jar server.jar nogui
+/home/jdk17/bin/java -Xms128M -Dfile.encoding=UTF-8 -Dlog4j2.formatMsgNoLookups=true -XX:+UseG1GC -jar server.jar nogui
 ;;
 5)
   echo '你来的太早了'
