@@ -20,7 +20,7 @@ then
         echo '启动Minecraft 服务器'
         echo '====================='
         sleep 3s
-            curl -s -o /tmp/sjava.sh https://raw.gitmirror.com/XiaoKunGe1203/hxnet-gp/main/startmcjava.sh && sh /tmp/sjava.sh
+           echo '检测到为Java环境的服务端，请更换环境'
             exit
 else
     if [ -e "bedrock_server" ]
@@ -43,7 +43,7 @@ else
         echo '启动Minecraft Bedrock服务器'
         echo '====================='
         sleep 3s
-            ./bedrock_server
+           echo '检测到为BDS服务端，请更换环境为Debian并设置启动命令 ./bedrock_server'
             exit
         else
            echo  
@@ -82,7 +82,8 @@ case $SOFTWARE_SELECT in
      echo -e "安装Minecraft Java服务器"
      echo -e "==================================="
      sleep 5s
-     sh /tmp/installjava.sh
+     echo -e "对不起，由于一些原因暂时无法提供服务端下载"
+#     sh /tmp/installjava.sh
      exit
       ;;
    "2")
@@ -90,7 +91,8 @@ case $SOFTWARE_SELECT in
         echo "安装Minecraft Bedrock服务器"
         echo "==============================="
          sleep 5s
-        sh /installbed.sh
+         echo -e "对不起，由于一些原因暂时无法提供服务端下载"
+#        sh /installbed.sh
         exit
       ;;
 esac
